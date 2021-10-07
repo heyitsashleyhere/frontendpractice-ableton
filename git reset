@@ -1,0 +1,41 @@
+[33mcommit 503c5deddabb7511b66d99607bc884e34f2159a2[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Ronny <ronnykorneli@googlemail.com>
+Date:   Thu Oct 7 13:07:06 2021 +0200
+
+    our branch
+
+[33mcommit 7b41e7068c3b7e1555cca75322bfb2352c6bce4b[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: 0877a20 d10fd0d
+Author: Ashley <84905549+heyitsashleyhere@users.noreply.github.com>
+Date:   Thu Oct 7 11:46:14 2021 +0200
+
+    Merge pull request #2 from heyitsashleyhere/Ashley
+    
+    index.html done
+
+[33mcommit d10fd0d98f64bddaafd99db9d05786f846e3091c[m[33m ([m[1;31morigin/Ashley[m[33m)[m
+Author: Ashley Jiang <ashleyjiang4@gmail.com>
+Date:   Thu Oct 7 11:45:49 2021 +0200
+
+    index.html done
+
+[33mcommit 0877a20ff9f926fd7e031c41260b4ffd02fd4fef[m
+Merge: 43e42fc 68203a1
+Author: Ashley <84905549+heyitsashleyhere@users.noreply.github.com>
+Date:   Thu Oct 7 10:38:32 2021 +0200
+
+    Merge pull request #1 from heyitsashleyhere/Ashley
+    
+    created assets folder
+
+[33mcommit 68203a10f834bde8db12c373f4fd30f3fada5036[m
+Author: Ashley Jiang <ashleyjiang4@gmail.com>
+Date:   Thu Oct 7 10:37:07 2021 +0200
+
+    created assets folder
+
+[33mcommit 43e42fce9c1966a48ae27d0c3f9b0515ae1c8bee[m[33m ([m[1;31morigin/Ronny[m[33m, [m[1;32mRonny[m[33m)[m
+Author: Ashley Jiang <ashleyjiang4@gmail.com>
+Date:   Thu Oct 7 10:24:16 2021 +0200
+
+    index and css created
