@@ -10,26 +10,32 @@
 /* ================================================
     header
 =================================================== */
+nav,
+aside {
+    padding: 2%;
+}
+
 nav {
     width: 100%;
     height: 10vh;
-    padding: 1.2rem;
     display: flex;
     align-items: center;
 }
 
-nav a {
+nav a,
+aside a {
     text-decoration: none;
+    color: rgb(0, 0, 0);
 }
 
-nav ul {
+nav ul,
+aside ul {
     list-style-type: none;
     display: flex;
     align-items: center;
 }
 
 .nav-fixed {
-    border-bottom: 0.2rem solid #EEEEEE;
     position: relative;
 }
 
@@ -47,7 +53,6 @@ nav ul {
 .nav-fixed a {
     font-size: 19px;
     font-weight: 400;
-    color: rgb(0, 0, 0);
 }
 
 .right-corner-btns {
@@ -77,27 +82,111 @@ nav ul {
 }
 
 .nav-sticky {
+    border-top: 0.2rem solid #EEEEEE;
     background-color: rgba(255, 255, 255, 0.5);
 }
 
+/* drop down menu ************/
+h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 1rem 0;
+}
 
+aside a,
+aside h6,
+aside p {
+    font-size: 1.2rem;
+}
 
+aside a,
+aside p {
+    font-weight: 300;
+}
+
+h6 {
+    font-weight: 400;
+    margin-bottom: 0.6rem;
+}
+
+.more-ableton-com a {
+    margin-right: 1.8rem;
+}
+
+.orange {
+    color: rgb(255, 118, 77);
+}
+
+.more-ableton {
+    margin: 2.5rem 0;
+}
+
+.more-ableton section {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 5%;
+}
+
+.more-ableton p {
+    line-height: 1.8rem;
+}
+
+aside {
+    display: none;
+}
+
+/* plus button ************/
+.drop-down-input {
+    display: none;
+}
+
+.nav-fixed ul li a:last-child {
+    position: relative;
+}
+
+.drop-down-label {
+    /* we need to change inline-block to take hold of the dimensions */
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: -35%;
+}
+
+.plus-btn {
+    display: block;
+    width: 13px;
+    height: 2px;
+    background-color: black;
+    position: relative;
+}
+
+.plus-btn::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    transform: rotate(90deg);
+    position: absolute;
+    /* transition: all 300ms ease-in-out; */
+}
+
+.drop-down-input:checked ~ .drop-down-label .plus-btn::after {
+    opacity: 0;
+}
+
+/* drop-down-input:checked ~ aside{
+    display: show;
+} */
 
 /* ================================================
     main
 =================================================== */
-
-
-/* Ashley code ends here */
-
 main {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-
 }
 
 
@@ -116,10 +205,8 @@ main {
 }
 
 .section-1 {
-
     width: 65vw;
     padding: 2rem;
-
 }
 
 .section-1 h3 {
@@ -127,6 +214,11 @@ main {
     letter-spacing: 2px;
     padding-bottom: 1rem;
     font-family: 'Roboto', Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.section-1 a {
+    text-decoration: none;
+    color: #1B00FF;
 }
 
 .section-2 {
@@ -137,8 +229,6 @@ main {
     grid-template-rows: repeat(7, 1fr);
     margin-top: 5rem;
     margin-bottom: 5rem;
-
-
 }
 
 .yellow {
@@ -159,15 +249,12 @@ main {
     grid-row: 3/6;
     background-image: url(./assets/photo-2.jpeg);
     background-size: cover;
-
 }
 
 .section-3 {
-
     width: 65vw;
     padding: 2rem;
     margin-bottom: 5rem;
-
 }
 
 .section-3 h3 {
@@ -178,7 +265,6 @@ main {
 }
 
 .section-film {
-
     width: 60vw;
     height: 70vh;
     padding: 2rem;
@@ -218,52 +304,40 @@ main {
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr);
     margin-bottom: 5rem;
-
 }
 
 .green {
     grid-row: 1/11;
     grid-column: 1/7;
     background-color: #b6ffc0;
-
 }
 
 .photo-3 {
-
     grid-row: 2/5;
     grid-column: 2/5;
     background-image: url(./assets/photo-3.jpeg);
     background-size: cover;
-
-
 }
 
 
 .photo-4 {
-
     grid-row: 7/10;
     grid-column: 2/5;
     background-image: url(./assets/photo-4.jpeg);
     background-size: cover;
-
-
 }
 
 .photo-5 {
-
     grid-row: 3/9;
     grid-column: 6/10;
     background-image: url(./assets/photo-5.jpeg);
     background-size: cover;
-
 }
 
 .section-6 {
-
     width: 65vw;
     padding: 2rem;
     margin-bottom: 5rem;
-
 }
 
 .section-6 h3 {
@@ -279,14 +353,10 @@ main {
     background-image: url(./assets/poster-meet-the-makers.jpeg);
     background-size: cover;
     margin-bottom: 5rem;
-
 }
 
 .section-7 {
-
     width: 65vw;
-    
-
 }
 
 .section-7 h3 {
@@ -301,15 +371,12 @@ main {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(10, 1fr);
-
-
 }
 
 .purple {
     grid-column: 3/10;
     grid-row: 2/10;
     background-color: #d5b3ff;
-
 }
 
 .photo-6 {
@@ -324,8 +391,6 @@ main {
     background-image: url(./assets/photo-7.jpeg);
     background-repeat: no-repeat;
     z-index: 100;
-    
-
 }
 
 .section-9 {
@@ -375,9 +440,7 @@ main {
     position: relative;
     left: -110px;
     line-height: 60px;
-
 }
-
 
 
 /* ================================================
@@ -386,13 +449,14 @@ main {
 footer {
     padding: 5rem;
     border-top: 0.2rem solid #EEEEEE;
+    margin-top: 6rem;
 }
+
 footer a {
     text-decoration: none;
     color: rgb(0, 0, 0);
 }
 
-/* ****************************** */
 h2,
 h5 {
     font-weight: 500;
@@ -414,26 +478,30 @@ h5,
     font-weight: 300;
 }
 
+.resource-parent>div>a::after {
+    content: '\00a0›';
+}
+
 .resource-parent p{
     line-height: 1.6rem;
     margin-bottom: 1rem;
 }
 
 .resource-parent * {
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
-
 
 .resource-parent>div {
     display: flex;
     flex-direction: column;
 }
+
 /* GRID ****************************** */
 .resource-parent {
     display: grid;
     grid-template-columns: repeat(2, 2fr) 3fr;
     grid-template-rows: repeat(2, 1fr);
-    row-gap: 2rem;
+    row-gap: 2.5rem;
 }
 
 .resource-child-1 {
@@ -487,7 +555,8 @@ form {
     display: flex;
 }
 
-input[type=email]{
+input[type=email],
+select {
     border: none;
     background-color: #EEEEEE;
     height: 2rem;
@@ -507,6 +576,20 @@ label {
     justify-content: center;
     align-items: center;
 }
+
+/* dropdown - language */
+.language {
+    width: 30%;
+    margin-right: 0.3em;
+}
+/* dropdown - location */
+.location {
+    width: 50%;
+}
+
+/* need to figure out: https://stackoverflow.com/questions/31531865/css-change-dropdown-arrow-to-unicode-triangle/31532058 */
+
+/* need to figure out: https://stackoverflow.com/questions/14218307/select-arrow-style-change */
 
 /* ****************************** */
 .bottom-line-container,
