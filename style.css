@@ -103,8 +103,9 @@ main {
 
 .hero-img {
     background-image: url(./assets/header.jpeg);
-    width: 90vw;
-    height: 100vh;
+    background-size: cover;
+    width: 78vw;
+    height: 150vh;
     color: #ff764d;
     font-size: 3rem;
     display: flex;
@@ -187,6 +188,14 @@ main {
     background-position: center;
 }
 
+.smallText{
+    position: relative;
+    top: -75px;
+    left: -232git px;
+    font-size: 0.7rem;
+    font-weight: 400;
+}
+
 .section-4 {
 
     width: 65vw;
@@ -265,7 +274,7 @@ main {
 }
 
 .poster-meet-the-makers {
-    width: 90vw;
+    width: 78vw;
     height: 70vh;
     background-image: url(./assets/poster-meet-the-makers.jpeg);
     background-size: cover;
@@ -276,25 +285,23 @@ main {
 .section-7 {
 
     width: 65vw;
-    padding: 2rem;
-    margin-bottom: 2rem;
+    
 
 }
 
 .section-7 h3 {
     line-height: 25px;
     letter-spacing: 2px;
-    padding-bottom: 1rem;
     font-family: 'Roboto', Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 .section-8 {
-    height: 110vh;
+    height: 100vh;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(10, 1fr);
-    margin-bottom: 2rem;
+
 
 }
 
@@ -335,18 +342,42 @@ main {
 }
 
 .section-10{
-    width: 80vw;
+    width: 90vw;
     height: 70vh;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     background-color: aqua;
 }
 
 .photo-8{
-    height: 100%;
-    width: 70%;
+    grid-column: 1/2;
     background-image: url(./assets/photo-8.jpeg);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
 }
+
+.textPhoto-8{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 30px;
+    letter-spacing: 2px;
+    padding: 4rem;
+    font-family: 'Roboto', Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.textPhoto-8 a{
+    text-decoration: none;
+    color: #0000ff;
+    font-weight: bolder;
+    position: relative;
+    left: -110px;
+    line-height: 60px;
+
+}
+
 
 
 /* ================================================
