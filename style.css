@@ -6,3 +6,75 @@
     padding: 0;
     font-family: 'Roboto', Helvetica Neue, Helvetica, Arial, sans-serif;
 }
+
+/* ================================================
+    header
+=================================================== */
+nav {
+    width: 100%;
+    height: 10vh;
+    padding: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-fixed {
+    border-bottom: 0.2rem solid #EEEEEE;
+    position: relative;
+}
+/* logo */
+.nav-fixed img {
+    width: 60px;
+}
+
+.nav-fixed ul {
+    width: 40%;
+    margin-left: 2rem;
+    justify-content: space-between;
+}
+
+.nav-fixed a {
+    font-size: 19px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+}
+
+.right-corner-btns {
+    position: absolute;
+    right: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.right-corner-btns a {
+    margin-left: 1.5rem;
+}
+
+.right-corner-btns a:first-child {
+    color: rgb(0, 0, 255);
+}
+
+.right-corner-btns a:last-child,
+.nav-sticky a {
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+}
+
+.nav-sticky a:first-child {
+    color: rgb(255, 118, 77);
+    margin-right: 1.5rem;
+}
+
+.nav-sticky {
+    background-color: rgba(255, 255, 255, 0.5);
+}
