@@ -322,11 +322,9 @@ main {
 }
 
 .section-9 {
-
     width: 65vw;
     padding: 2rem;
     margin-bottom: 5rem;
-
 }
 
 .section-9 h3 {
@@ -343,185 +341,12 @@ main {
     background-color: aqua;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.photo-8{
+    height: 100%;
+    width: 70%;
+    background-image: url(./assets/photo-8.jpeg);
+    background-size: cover;
+}
 
 
 /* ================================================
@@ -683,10 +508,4 @@ label {
 .bottom-line-container a,
 .right-bottom-logo p {
     margin-right: 0.6rem;
-
-.photo-8{
-    height: 100%;
-    width: 70%;
-    background-image: url(./assets/photo-8.jpeg);
-    background-size: cover;
 }
