@@ -83,9 +83,9 @@ nav ul {
 
 
 
-
-
-
+/* ================================================
+    main
+=================================================== */
 
 
 /* Ashley code ends here */
@@ -342,6 +342,347 @@ main {
     display: flex;
     background-color: aqua;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================================================
+    footer
+=================================================== */
+footer {
+    padding: 5rem;
+    border-top: 0.2rem solid #EEEEEE;
+}
+footer a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+/* ****************************** */
+h2,
+h5 {
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+h5,
+.resource-parent a,
+.resource-parent p {
+    margin-bottom: 0.6rem;
+}
+
+.resource-parent a,
+.resource-parent p{
+    font-weight: 300;
+}
+
+.resource-parent p{
+    line-height: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.resource-parent * {
+    font-size: 1rem;
+}
+
+
+.resource-parent>div {
+    display: flex;
+    flex-direction: column;
+}
+/* GRID ****************************** */
+.resource-parent {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr) 3fr;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 2rem;
+}
+
+.resource-child-1 {
+    grid-area: 1/1/2/2;
+}
+
+.resource-child-2 {
+    grid-area: 1/2/2/3;
+}
+
+.resource-child-3 {
+    grid-area: 1/3/2/4;
+}
+
+.resource-child-4 {
+    grid-area: 2/1/3/2;
+}
+
+.resource-child-5 {
+    grid-area: 2/2/3/3;
+}
+
+.resource-child-6 {
+    grid-area: 2/3/3/4;
+}
+
+/* ICONS ****************************** */
+.fab {
+    font-size: 2.5rem;
+    margin-right: 0.1em;
+}
+
+.fa-facebook-square {
+    color: #3576F2;
+}
+
+.fa-twitter-square {
+    color: #1CA2F1
+}
+
+.fa-youtube-square {
+    color: #FF011D;
+}
+
+.fa-instagram-square {
+    color: #F77737;
+}
+
+/* FORM ****************************** */
+form {
+    display: flex;
+}
+
+input[type=email]{
+    border: none;
+    background-color: #EEEEEE;
+    height: 2rem;
+    width: 80%;
+    padding-left: 0.6rem;
+} 
+
+input::placeholder {
+    color:#949494;
+}
+
+label {
+    background-color: #1B00FF;
+    color: rgb(255, 255, 255);
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ****************************** */
+.bottom-line-container,
+.bottom-line-container ul,
+.right-bottom-logo {
+    display: flex;
+}
+
+.bottom-line-container ul,
+.right-bottom-logo {
+    align-items: center;
+}
+
+.bottom-line-container {
+    justify-content: space-between;
+    margin: 3rem 0;
+}
+
+.bottom-line-container ul {
+    list-style-type: none;
+
+}
+
+.bottom-line-container a,
+.bottom-line-container p {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.bottom-line-container a,
+.right-bottom-logo p {
+    margin-right: 0.6rem;
 
 .photo-8{
     height: 100%;
